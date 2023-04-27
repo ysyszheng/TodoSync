@@ -80,7 +80,7 @@ AnouncementConfig :
   # {course.originalname} -> 原始课程名
   # {anouncement.title} -> 公告标题
   # {anouncement.author} -> 公告发布者
-  TitleTemplate : "{course.name} - {anouncement.title}"
+  TitleTemplate : "#{course.name} {anouncement.title}"
   # 指定待办事项的重要性：true 为重要
   SetImportance : false
   # 指定延后提醒的时间间隔（此选项对滴答清单无效）
@@ -126,7 +126,7 @@ AssignmentConfig :
   # {course.coursecodeshort} -> 简化的课程代码
   # {course.originalname} -> 原始课程名
   # {assignment.title} -> 作业标题
-  TitleTemplate : "{course.name} - {assignment.title}"
+  TitleTemplate : "#{course.name} {assignment.title}"
   SetImportance : false
   # 指定待办事项过期时间的来源
   # 可选值: due_at | lock_at
@@ -183,7 +183,7 @@ QuizConfig :
   # {course.coursecodeshort} -> 简化的课程代码
   # {course.originalname} -> 原始课程名
   # {quiz.title} -> 测验标题
-  TitleTemplate : "{course.name} - {quiz.title}"
+  TitleTemplate : "#{course.name} {quiz.title}"
   SetImportance : false
   # 指定待办事项过期时间的来源
   # 同 Assignment 的配置
@@ -224,7 +224,7 @@ DiscussionConfig :
   # {course.coursecodeshort} -> 简化的课程代码
   # {course.originalname} -> 原始课程名
   # {discussion.title} -> 讨论标题
-  TitleTemplate : "{course.name} - {discussion.title}"
+  TitleTemplate : "#{course.name} {discussion.title}"
   SetImportance : false
   # （此选项对滴答清单无效）
   RemindAfter : 00:05:00.00
